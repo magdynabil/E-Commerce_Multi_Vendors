@@ -33,7 +33,7 @@ class MainCategoriesController extends Controller
         }
             //if user choose main category then we must remove paret id from the request
 
-            if($request -> type == 0) //main category
+            if($request -> type == 1) //main category
             {
                 $request->request->add(['parent_id' => null]);
             }

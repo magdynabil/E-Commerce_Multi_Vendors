@@ -17,6 +17,7 @@ class CreateCetegoriesTable extends Migration
             $table->increments('id');
             $table->integer('parent_id')->unsigned()->nullable();
             $table->string('slug')->unique();
+            $table->string('photo')->nullable();
             $table->boolean('is_active');
             $table->timestamps();
 

@@ -9,6 +9,7 @@ use App\Http\Requests\ProductPriceValidation;
 use App\Http\Requests\ProductStockRequest;
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\Image;
 use App\Models\Product;
 use App\Models\Tag;
 use Illuminate\Http\Request;

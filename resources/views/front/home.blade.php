@@ -36,7 +36,7 @@
                                 @isset($sliders)
                                     @foreach($sliders as $slider)
                                         <a href="#">
-                                            <img src="{{$slider -> photo }}"
+                                            <img src="{{ $slider -> photo }}"
                                                  alt="" title="#htmlcaption_42">
                                         </a>
                                     @endforeach
@@ -66,7 +66,7 @@
                                     <div class="block_content">
                                         <div class="effect">
                                             <a href="#"> <img class="img-fluid"
-                                                              src="assets/images/1.jpg"
+                                                              src="{{asset('assets/images/1.jpg')}}"
                                                               alt="banner3-1" title="banner3-1"></a>
 
 
@@ -79,7 +79,7 @@
                                     <div class="block_content">
                                         <div class="effect">
                                             <a href="#"> <img class="img-fluid"
-                                                              src="assets/images/2.jpg"
+                                                              src="{{asset('assets/images/2.jpg')}}"
                                                               alt="banner3-1" title="banner3-1"></a>
 
 
@@ -92,7 +92,7 @@
                                     <div class="block_content">
                                         <div class="effect">
                                             <a href="#"> <img class="img-fluid"
-                                                              src="assets/images/3.jpg"
+                                                              src="{{asset('assets/images/3.jpg')}}"
                                                               alt="banner3-1" title="banner3-1"></a>
 
 

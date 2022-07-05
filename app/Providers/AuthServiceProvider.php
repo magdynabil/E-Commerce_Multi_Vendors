@@ -25,6 +25,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        foreach ( config('global.permissions') as $ability => $value) { //brands
+            Gate::define($ability, function ($auth) use ($ability){
+                return $auth->hasAbility($ability);
+            });
+        }
     }
 }
